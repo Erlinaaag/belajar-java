@@ -1,0 +1,24 @@
+class Pasien {
+    String nama;
+
+    Pasien(String nama) {
+        this.nama = nama;
+    }
+
+    String getNama() {
+        return nama;
+    }
+}
+
+class Dokter {
+    String nama;
+
+    Dokter(String nama) {
+        this.nama = nama;
+    }
+
+    void periksaPasien(Pasien p) { // hanya pakai objek
+        System.out.println("Dokter " + nama +
+            " memeriksa pasien " + p.getNama());
+    }
+}
